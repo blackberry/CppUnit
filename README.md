@@ -16,6 +16,12 @@ Note there is no official owner for this project. Instead, this project will use
 4. This will produce a library for the selected configuration (e.g. libcppunit.so).
 5. Programs that use cppunit will need to include the path to the include directory (cppunit/include) as well as the
    path to the library in their project files.
+   
+### Gnu libc
+
+To build against GNU libc instead of the default Dinkumware libc, define the GNULIBC=yes macro in the build. For example from the command line
+
+     make GNULIBC=yes
 
 ### Notes
 

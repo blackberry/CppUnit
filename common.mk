@@ -25,6 +25,11 @@ PINFO DESCRIPTION=CppUnit library
 endef
 INSTALLDIR=usr/lib
 
+ifeq ($(GNULIBC),yes)
+	CCFLAGS += -Y_gpp
+	LDFLAGS += -Y_gpp
+endif
+
 include $(MKFILES_ROOT)/qtargets.mk
 
 #####################################
